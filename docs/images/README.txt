@@ -5,3 +5,5 @@ minion.png        a minion working in game
 menu.png          the minion menu (right-click a minion)
 skins.png         a few minions with their Hypixel heads
 compactor.png     Lapis minion with Compactor / Enchanted Lapis in storage
+items.png
+catalog.png
