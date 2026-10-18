@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.github.irisss01</groupId>
+  <artifactId>HypixelMinions</artifactId>
+  <version>2.2.0</version>
+  <packaging>jar</packaging>
+  <name>HypixelMinions</name>
+  <description>Hypixel SkyBlock style minions for Paper 1.21</description>
+  <url>https://github.com/Irisss01/Minions-remake</url>
+  <licenses>
+    <license><name>MIT License</name><url>https://opensource.org/licenses/MIT</url></license>
+  </licenses>
+  <developers>
+    <developer><id>Irisss01</id><name>Iris</name><url>https://github.com/Irisss01</url></developer>
+  </developers>
+  <scm><url>https://github.com/Irisss01/Minions-remake</url></scm>
+  <properties>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <repositories>
+    <repository><id>papermc</id><url>https://repo.papermc.io/repository/maven-public/</url></repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>io.papermc.paper</groupId>
+      <artifactId>paper-api</artifactId>
+      <version>1.21.4-R0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>HypixelMinions</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>

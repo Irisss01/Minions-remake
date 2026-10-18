@@ -1,0 +1,26 @@
+name: HypixelMinions
+main: dev.minions.MinionsPlugin
+version: 2.2.0
+api-version: '1.21'
+softdepend: [Vault]
+description: Hypixel SkyBlock style minions
+authors: [Irisss01]
+website: https://github.com/Irisss01/Minions-remake
+commands:
+  minions:
+    description: Minion collection and admin commands
+    aliases: [minion]
+    usage: /minions [give|list|reload|texture]
+permissions:
+  minions.use:
+    description: Open the /minions menu, place and use minions
+    default: true
+  minions.catalog:
+    description: Take any minion / fuel / upgrade for free from the /minions menu
+    default: op
+  minions.admin:
+    description: Admin commands, open and pick up other people's minions
+    default: op
+  minions.bypass:
+    description: Ignore the minion slot limit
+    default: op

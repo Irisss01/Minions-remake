@@ -1,0 +1,50 @@
+# ---------------- HypixelMinions config ----------------
+base-slots: 5            # Hypixel players start with 5 minion slots
+uniques-per-slot: 5      # +1 slot for every N unique minion tiers crafted/obtained
+max-slots: 31            # hard cap (permission minions.slots.<N> can grant more)
+allow-others-to-open: false
+small-minions: true
+
+# Work loop (always like Hypixel): fill the whole area with blocks first, then break ONE block, place a block
+# back in that same spot, break another one, and so on forever.
+
+# smooth arm / head animations, hit sounds, cracking stages (only for minions a player is near)
+animations: true
+save-interval-seconds: 300
+
+# Which layer the minion works on, relative to the block it stands in.
+# -1 = the layer it stands ON (Hypixel behaviour: dig a 5x5 hole, blocks appear down there)
+work-layer-offset: -1
+
+offline:
+  max-hours: 0           # 0 = minions keep working until their storage is full
+
+# Speed overrides (seconds between actions, 12 values for tiers I..XII), e.g.:
+# types:
+#   COBBLESTONE:
+#     tba: [14,14,12,12,10,10,9,9,8,8,7,6]
+types: {}
+
+# Fuel overrides: boost = +% speed (0.05 = 5%), minutes = duration (-1 = infinite)
+# fuels:
+#   COAL: { boost: 0.05, minutes: 30 }
+fuels: {}
+
+# Automated Shipping (needs Vault + an economy plugin). Sell value per item.
+prices:
+  default: 1.0
+  COBBLESTONE: 0.5
+  COAL: 2.0
+  IRON_INGOT: 3.0
+  GOLD_INGOT: 4.0
+  DIAMOND: 8.0
+  EMERALD: 6.0
+  LAPIS_LAZULI: 1.5
+
+# Head skins. The easiest way to get the exact Hypixel minion heads for ALL tiers:
+#   python3 tools/import_hypixel_skins.py        (needs internet, run it once)
+# it writes plugins/HypixelMinions/skins.yml -> then /minions reload.
+# Anything set below overrides skins.yml. Hold a custom head and run /minions texture <minion> hand to save it here.
+# Paste a texture URL, the 64-char hash, or the Base64 "Value". Per tier ("1".."12") or "default" for all tiers.
+# Empty = the minion wears a helmet dyed in its colour (never a block / ore).
+textures: {}
