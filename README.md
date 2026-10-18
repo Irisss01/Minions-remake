@@ -61,7 +61,7 @@ enchanted items when upgrading a minion. The menu shows which upgrades work on e
 does nothing on a Lapis minion.
 
 ### Skins
-<p align="center"><img src="docs/images/skins.png" alt="Minion skins" width="60%"></p>
+<p align="center"><img src="docs/images/items.png" alt="Items" width="60%"></p>
 
 Heads are picked in this order: `textures` in `config.yml`, then `skins.yml`, then the built-in Cobblestone set,
 then a helmet dyed in the minion's colour.
